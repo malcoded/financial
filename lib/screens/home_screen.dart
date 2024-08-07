@@ -98,12 +98,12 @@ class BalanceCard extends StatelessWidget {
               children: [
                 Text(
                   'Balance Actual',
-                  style: Theme.of(context).textTheme.headline6,
+                  style: Theme.of(context).textTheme.bodyMedium,
                 ),
                 const SizedBox(height: 8),
                 Text(
                   '\$${balance.toStringAsFixed(2)}',
-                  style: Theme.of(context).textTheme.headline4,
+                  style: Theme.of(context).textTheme.bodyMedium,
                 ),
               ],
             );

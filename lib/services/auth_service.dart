@@ -22,9 +22,31 @@ class AuthService {
           email: email, password: password);
       return result.user;
     } catch (e) {
-      print(e.toString());
+      print('Error login: ${e.toString()}');
       return null;
     }
+  }
+
+  // Enviar código de verificación
+  Future<void> verifyPhoneNumber(
+      String phoneNumber,
+      Function(PhoneAuthCredential) verificationCompleted,
+      Function(FirebaseAuthException) verificationFailed,
+      Function(String, int?) codeSent,
+      Function(String) codeAutoRetrievalTimeout,
+      ) async {
+    await _auth.verifyPhoneNumber(
+      phoneNumber: phoneNumber,
+      verificationCompleted: verificationCompleted,
+      verificationFailed: verificationFailed,
+      codeSent: codeSent,
+      codeAutoRetrievalTimeout: codeAutoRetrievalTimeout,
+    );
+  }
+
+  // Iniciar sesión con credencial
+  Future<UserCredential> signInWithCredential(PhoneAuthCredential credential) async {
+    return await _auth.signInWithCredential(credential);
   }
 
   // Cerrar sesión

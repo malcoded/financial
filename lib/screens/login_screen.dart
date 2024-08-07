@@ -1,5 +1,5 @@
-import 'package:flutter/material.dart';
 import 'package:financial/services/auth_service.dart';
+import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -43,6 +43,9 @@ class _LoginScreenState extends State<LoginScreen> {
                   _emailController.text,
                   _passwordController.text,
                 );
+
+                print('User xxerror: $user');
+
                 if (user != null) {
                   // Navegar a la pantalla principal
                   Navigator.pushReplacementNamed(context, '/home');
