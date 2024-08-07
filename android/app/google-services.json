@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "756999358146",
+    "project_id": "financial-ee64c",
+    "storage_bucket": "financial-ee64c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:756999358146:android:bdcbb14b83bd97d0111d5b",
+        "android_client_info": {
+          "package_name": "chasky.io.financial"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxm5ZKtliQkSRVZh6yYp1HZTo8cZW-oBg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
